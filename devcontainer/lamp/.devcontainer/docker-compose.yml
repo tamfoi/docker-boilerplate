@@ -1,18 +1,12 @@
 version: "3"
 
 services:
-  workspace:
-    build:
-      context: ./workspace
-      dockerfile: Dockerfile
-    volumes:
-      - ..:/workspace:cached
-    command: sleep infinity
   web:
     build:
       context: ./web
       dockerfile: Dockerfile
     volumes:
+      - ..:/workspace:cached
       - ../htdocs:/var/www/html
     ports:
       - 8000:80
