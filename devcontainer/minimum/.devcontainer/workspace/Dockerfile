@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # 自動インストールが止まるのを防ぐため入力待ちでブロックされないようにする
 ENV DEBIAN_FRONTEND=noninteractive
