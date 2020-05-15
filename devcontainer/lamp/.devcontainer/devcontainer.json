@@ -1,0 +1,19 @@
+// DevContainerの設定項目のリファレンス https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference
+{
+  "name": "LAMP",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  // DevContainerで使用するVSCodeの拡張機能
+  "extensions": [
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "ms-azuretools.vscode-docker",
+    "ms-ceintl.vscode-language-pack-ja"
+  ],
+  // ホストOSのディレクトリのマウント設定
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace"
+}
