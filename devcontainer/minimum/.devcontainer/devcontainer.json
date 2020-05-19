@@ -4,7 +4,7 @@
   "dockerComposeFile": "./docker-compose.yml",
   "service": "workspace",
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+    "terminal.integrated.shell.linux": "/bin/sh"
   },
   // DevContainerで使用するVSCodeの拡張機能
   "extensions": [
