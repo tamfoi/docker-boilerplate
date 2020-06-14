@@ -11,6 +11,8 @@ RUN apt-get update \
   && apt-get -y install curl unzip \
   && curl -fsSL https://deno.land/x/install/install.sh | sh
 
+RUN ~/.deno/bin/deno upgrade
+
 ENV PATH $PATH:$PATH:~/.deno/bin/
 
 # ダイアログモードに戻す
