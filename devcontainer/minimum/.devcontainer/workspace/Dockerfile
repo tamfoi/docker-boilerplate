@@ -7,7 +7,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 # 最小構成は下記
 # https://code.visualstudio.com/docs/remote/containers-advanced#_reducing-dockerfile-build-warnings
 RUN apt-get update \
-  && apt-get -y install --no-install-recommends apt-utils dialog 2>&1
+  && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
+  && apt-get -y install git
 
 # ダイアログモードに戻す
 ENV DEBIAN_FRONTEND=dialog
