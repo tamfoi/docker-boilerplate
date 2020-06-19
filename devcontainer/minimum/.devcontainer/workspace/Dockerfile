@@ -8,7 +8,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 # https://code.visualstudio.com/docs/remote/containers-advanced#_reducing-dockerfile-build-warnings
 RUN apt-get update \
   && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
-  && apt-get -y install git
+  && apt-get -y install git \
+  #
+  # node.js
+  && apt-get -y install curl nodejs npm \
+  && npm -g install n \
+  && n stable \
+  && apt-get -y purge nodejs npm
 
 # ダイアログモードに戻す
 ENV DEBIAN_FRONTEND=dialog
