@@ -1,3 +1,3 @@
 FROM scratch
-ADD base.tar /
+ADD base.tar.gz /
 CMD ["/bin/bash"]

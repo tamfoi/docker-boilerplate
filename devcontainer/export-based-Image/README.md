@@ -19,6 +19,12 @@ docker run --name base base
 docker export base > ../workspace/base.tar
 ```
 
+カレントディレクトリを .devcontainer/workspace にする
+gzipで圧縮
+```
+gzip base.tar -c > base.tar.gz
+```
+
 ## docker runで使えるかテスト
 カレントディレクトリを .devcontainer/workspace にする
 
