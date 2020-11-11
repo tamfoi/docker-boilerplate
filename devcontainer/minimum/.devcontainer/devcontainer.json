@@ -14,7 +14,8 @@
     "ms-azuretools.vscode-docker",
     "ms-ceintl.vscode-language-pack-ja",
     "hediet.vscode-drawio",
-    "oderwat.indent-rainbow"
+    "oderwat.indent-rainbow",
+    "humao.rest-client"
   ],
   // ホストOSのディレクトリのマウント設定
   "workspaceFolder": "/workspace"
