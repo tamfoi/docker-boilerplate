@@ -3,20 +3,29 @@
   "name": "MINIMUM",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "workspace",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      // DevContainerで使用するVSCodeの拡張機能
+      "extensions": [
+        "editorconfig.editorconfig",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "ms-ceintl.vscode-language-pack-ja",
+        "hediet.vscode-drawio",
+        "oderwat.indent-rainbow",
+        "humao.rest-client"
+      ]
+    }
   },
-  // DevContainerで使用するVSCodeの拡張機能
-  "extensions": [
-    "editorconfig.editorconfig",
-    "mhutchie.git-graph",
-    "eamodio.gitlens",
-    "ms-azuretools.vscode-docker",
-    "ms-ceintl.vscode-language-pack-ja",
-    "hediet.vscode-drawio",
-    "oderwat.indent-rainbow",
-    "humao.rest-client"
-  ],
   // ホストOSのディレクトリのマウント設定
   "workspaceFolder": "/workspace"
 }
