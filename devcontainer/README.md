@@ -1,4 +1,5 @@
 # DevContainer
+VSCodeのDevContainerのボイラープレート集
 
 ## ドキュメント
 
@@ -15,3 +16,15 @@ https://code.visualstudio.com/docs/remote/containers
     - https://docs.docker.com/docker-for-windows/release-notes/
   - Mac
     - https://docs.docker.com/docker-for-mac/release-notes/
+
+## ディレクトリ説明
+- aws-lamp
+  - lamp環境をawslinux上に作ったDevContainer
+- deno
+  - denoをインストールしたDevContainer
+- export-based-image
+  - エクスポートしたイメージを元にしたコンテナでDevContainerを作った例
+- lamp
+  - よくあるlamp環境DevContainer
+- minimum
+  - 最小構成DevContainer
