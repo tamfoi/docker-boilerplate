@@ -1,2 +1,4 @@
 # docker-store
 自分用Dockerfile置き場
+
+devcontainer配下はVSCodeの機能であるDevContainer用
